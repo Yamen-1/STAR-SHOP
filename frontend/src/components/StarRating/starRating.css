@@ -1,0 +1,10 @@
+input[type="radio"] {
+  display: none;
+}
+
+.star {
+  cursor: pointer;
+  -webkit-transition: color 200ms;
+  transition: color 200ms;
+}
+/*# sourceMappingURL=starRating.css.map */

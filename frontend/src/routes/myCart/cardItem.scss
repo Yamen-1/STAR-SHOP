@@ -1,0 +1,50 @@
+@media screen and (max-width: 800px) {
+  .hr {
+    margin-top: 1rem;
+    margin-left: 0;
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+
+  .container {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-top: 1rem;
+
+    margin-right: 0 !important;
+    padding: 0 !important;
+
+    > .secoundContainer {
+      gap: 0rem;
+
+      > .image {
+        width: 5rem !important;
+        height: 5rem !important;
+        margin-left: 0;
+      }
+      > .infos {
+        gap: 1rem;
+        margin-left: 0.4rem !important;
+        width: 8rem;
+        > h6 {
+          width: 9rem !important;
+          font-weight: 300;
+          font-size: small !important;
+        }
+        > .formInfos {
+          > .form {
+            width: 4rem !important;
+          }
+        }
+      }
+    }
+  }
+  .price {
+    margin-left: 0 !important;
+    padding: 0 !important;
+  }
+  .button {
+    padding: 0.2rem !important;
+    font-size: small !important;
+  }
+}

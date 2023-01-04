@@ -1,0 +1,135 @@
+@charset "UTF-8";
+.thanks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 3.4rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.thanks span {
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding: 0 1rem;
+  color: var(--accent);
+}
+
+.thanks > .spanT {
+  opacity: 0;
+  -webkit-animation: fadein 1s linear 1s forwards;
+          animation: fadein 1s linear 1s forwards;
+}
+
+.thanks > .spanY {
+  opacity: 0;
+  -webkit-animation: fadein 1s linear 1.4s forwards;
+          animation: fadein 1s linear 1.4s forwards;
+}
+
+.thanks > .spanF {
+  opacity: 0;
+  -webkit-animation: fadein 1s linear 1.8s forwards;
+          animation: fadein 1s linear 1.8s forwards;
+}
+
+.thanks > .spanY2 {
+  opacity: 0;
+  -webkit-animation: fadein 1s linear 2.2s forwards;
+          animation: fadein 1s linear 2.2s forwards;
+}
+
+.thanks > .spanO {
+  opacity: 0;
+  -webkit-animation: fadein 1s linear 2.6s forwards;
+          animation: fadein 1s linear 2.6s forwards;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+.parrProducte {
+  width: 100%;
+  height: 71vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 0 1rem;
+}
+
+.parrProducte > .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+}
+
+.zurück {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .thanks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 10rem;
+    margin: 0 1rem;
+    padding: 2rem;
+  }
+  .thanks span {
+    font-size: x-large;
+  }
+  .parrProducte {
+    height: 70vh;
+    overflow-y: scroll;
+  }
+  .parrProducte > .products {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .zurück > .linkCountinueShopping {
+    width: 20rem !important;
+    font-size: large !important;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=index.css.map */

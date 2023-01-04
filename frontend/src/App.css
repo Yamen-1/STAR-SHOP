@@ -1,0 +1,11 @@
+body {
+  background: var(--background) !important;
+}
+:root {
+  --error: red;
+  --secondary: green;
+  --accent: rgb(188, 156, 94);
+  --background: #ececec;
+  --text-light: var(--background);
+  --text-dark: #111111;
+}

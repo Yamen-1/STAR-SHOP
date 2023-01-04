@@ -1,0 +1,407 @@
+.Accaount {
+  display: -ms-grid;
+  display: grid;
+  min-height: calc(100vh - 5rem);
+  width: 100%;
+  -ms-grid-columns: 50% 40% 10%;
+      grid-template-columns: 50% 40% 10%;
+      grid-template-areas: "order settings logout" "footer footer footer";
+}
+
+.Accaount > .orderList {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: order;
+  margin-top: 2rem;
+  margin-left: 4rem;
+  max-height: 65vh;
+}
+
+.Accaount .scrollingAccount {
+  overflow-y: scroll;
+  max-height: 55vh;
+}
+
+.Accaount .listGroupAccount {
+  background-color: #ffffff !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+.Accaount .listGroupAccount > .cartInfoAccount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid black;
+  width: 85%;
+}
+
+.Accaount .listGroupAccount > .cartInfoAccount > .img-TitelAccount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 1rem;
+}
+
+.Accaount .listGroupAccount > .cartInfoAccount > .img-TitelAccount > img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.Accaount .listGroupAccount > .cartInfoAccount > .img-TitelAccount > .titelInfoAccount {
+  padding-left: 1rem;
+}
+
+.Accaount .listGroupAccount > .cartInfoAccount > .img-TitelAccount > .titelInfoAccount > p {
+  white-space: wrap;
+  width: 10rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+  font-size: small;
+}
+
+.Accaount .listGroupAccount > .cartInfoAccount > .priceInfoAccount {
+  width: 10rem;
+  text-align: right;
+  padding: 2.5rem;
+  font-weight: bolder;
+}
+
+.Accaount .listGroupAccount > .cartInfoAccount > .quantityInfoAccount {
+  width: 10rem;
+  text-align: right;
+  padding: 2.5rem;
+  font-weight: bolder;
+}
+
+.Accaount .listGroupAccount > .cartInfoAccount > p {
+  margin-top: 2rem;
+}
+
+.Accaount > .ContactDetail {
+  margin: 2rem 2rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: settings;
+}
+
+.Accaount > .ContactDetail > .firstDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Accaount > .ContactDetail > .firstDiv > .contactDetailArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 5rem;
+}
+
+.Accaount > .ContactDetail > .firstDiv > .contactDetailArea > .nameLabelArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.Accaount > .ContactDetail > .firstDiv > .contactDetailArea > .nameLabelArea > h5 {
+  margin-bottom: 3rem;
+  width: 13rem;
+}
+
+.Accaount > .ContactDetail > .firstDiv > .contactDetailArea > .uploadArea > .first > .secound > .centerDiv > .foto .text-secondary {
+  --bs-text-opacity: 1;
+  color: rgba(208, 212, 217, 0.5) !important;
+}
+
+.Accaount > .ContactDetail > .firstDiv > .titel {
+  width: 20rem;
+}
+
+.Accaount > .ContactDetail > .firstDiv > .passwordArea > .passwordArea1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  width: auto;
+  margin-top: 1rem;
+}
+
+.Accaount > .ContactDetail > .firstDiv > .passwordArea > .passwordArea1 > .button-delete-update {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.Accaount > .ContactDetail > .firstDiv > .passwordArea > .passwordArea1 > .button-delete-update > .button1,
+.Accaount > .ContactDetail > .firstDiv > .passwordArea > .passwordArea1 > .button-delete-update .button2 {
+  width: 10rem;
+  font-size: medium;
+  border: 1px solid red;
+  color: red;
+}
+
+.Accaount > .ContactDetail > .firstDiv > .passwordArea > .passwordArea1 > .button-delete-update > .button1:hover,
+.Accaount > .ContactDetail > .firstDiv > .passwordArea > .passwordArea1 > .button-delete-update .button2:hover {
+  background-color: red;
+  color: white;
+}
+
+.Accaount > .button-logout {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: logout;
+  margin-right: 2rem;
+}
+
+.Accaount .footerAccount {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  min-height: 10rem;
+  background-color: #111111;
+  color: #888888;
+  font-size: small;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.Accaount .footerAccount > .footer-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Accaount .footerAccount > .footer-contact {
+  font-size: medium;
+}
+
+.Accaount .footerAccount > .footer-contact > .footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+  font-size: large;
+}
+
+.Accaount .footerAccount > .footer-contact > .footer-icons > .footer-icons-instagram {
+  color: red;
+}
+
+.Accaount .footerAccount > .footer-contact > .footer-icons > .footer-icons-twitter {
+  color: #659efa;
+}
+
+.Accaount .footerAccount > .footer-contact > .footer-icons > .footer-icons-facebook {
+  color: blue;
+}
+
+@media only screen and (max-width: 800px) {
+  .Accaount {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas: "settings " "order " "logout" "footer";
+  }
+  .Accaount > .orderList {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: order;
+    margin-top: 2rem;
+    margin-left: 0.1rem;
+  }
+  .Accaount .listGroupAccount {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+    width: 100% !important;
+  }
+  .Accaount .listGroupAccount > .cartInfoAccount {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+  }
+  .Accaount .listGroupAccount > .cartInfoAccount > .img-TitelAccount {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem 1rem;
+  }
+  .Accaount .listGroupAccount > .cartInfoAccount > .img-TitelAccount > img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .Accaount .listGroupAccount > .cartInfoAccount > .img-TitelAccount > .titelInfoAccount {
+    padding-left: 0.8rem;
+  }
+  .Accaount .listGroupAccount > .cartInfoAccount > .img-TitelAccount > .titelInfoAccount > p {
+    white-space: wrap;
+    width: 5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bolder;
+    font-size: small;
+  }
+  .Accaount .listGroupAccount > .cartInfoAccount > .priceInfoAccount {
+    width: 5rem;
+    padding: 2rem 0;
+  }
+  .Accaount .listGroupAccount > .cartInfoAccount > .quantityInfoAccount {
+    width: 5rem;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .Accaount .listGroupAccount > .cartInfoAccount > p {
+    margin-top: 2rem;
+  }
+  .Accaount > .ContactDetail {
+    margin: 2rem 2rem;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: settings;
+  }
+  .Accaount > .ContactDetail > .firstDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Accaount > .ContactDetail > .firstDiv > .contactDetailArea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 3rem;
+  }
+  .Accaount > .ContactDetail > .firstDiv > .contactDetailArea > .nameLabelArea > h5 {
+    margin-bottom: 3rem;
+  }
+  .Accaount > .ContactDetail > .firstDiv > .contactDetailArea > .uploadArea > .first > .secound > .centerDiv > .foto {
+    margin-left: 6.5rem !important;
+  }
+  .Accaount > .ContactDetail > .firstDiv > .contactDetailArea > .uploadArea > .first > .secound > .centerDiv > .twoButtons {
+    margin-left: 4rem !important;
+  }
+  .Accaount > .ContactDetail > .firstDiv > .titel {
+    width: 20rem;
+  }
+  .Accaount > .ContactDetail > .firstDiv > .passwordArea > .passwordArea1 > .button-delete-update {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 3rem;
+    margin-top: 1rem;
+  }
+  .Accaount > .button-logout {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: logout;
+    margin-left: 33%;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+  }
+  .Accaount .footerAccount {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: footer;
+    min-height: 10rem;
+    font-size: small;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+  .Accaount .footerAccount > .footer-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Accaount .footerAccount > .footer-contact {
+    font-size: medium;
+  }
+  .Accaount .footerAccount > .footer-contact > .footer-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 2rem;
+    font-size: large;
+  }
+}
+/*# sourceMappingURL=index.css.map */

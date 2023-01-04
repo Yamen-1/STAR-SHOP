@@ -1,0 +1,100 @@
+.backgroundImg {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.backgroundImg::before {
+  background: url(../../images/apparel-g72210917f_1920.jpg) center center
+    no-repeat;
+  left: -10px;
+  right: -10px;
+  top: -10px;
+  bottom: -10px;
+  background-size: cover;
+  filter: blur(3px);
+  opacity: 0.9;
+  display: block;
+  content: " ";
+  position: absolute;
+}
+.Login {
+  padding-top: 7rem;
+  display: flex;
+  justify-content: center;
+
+  > .box {
+    border: 1px solid;
+    width: 30rem;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--background);
+
+    > .h1-login {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    > .input-group-login {
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+
+      > .label {
+        display: block;
+        width: 10rem;
+        text-align: right;
+        margin-right: 1rem;
+      }
+
+      > input {
+        display: block;
+        flex: 1;
+        border-radius: 30px;
+        border: 2px solid #cccccc;
+        background-color: #ffffff;
+        padding: 12px 20px 12px 20px;
+        font-size: 16px;
+      }
+    }
+
+    > .toggle-register {
+      text-align: right;
+      margin-top: 1.5rem;
+      font-weight: bold;
+      color: black;
+      cursor: pointer;
+    }
+
+    > button {
+      margin-top: 2rem;
+      cursor: pointer;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: var(--accent);
+      color: black;
+      font-family: "Roboto", sans-serif;
+      border-radius: 3px;
+    }
+    > .error {
+      color: red;
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Login {
+    margin: 2rem 0;
+    height: 28rem;
+
+    > .box {
+    }
+  }
+}

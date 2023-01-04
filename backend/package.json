@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "load": "node scripts/loadproducts.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "express-async-middleware": "^1.0.1",
+    "express-validator": "^6.14.2",
+    "mongoose": "^6.5.5",
+    "node-fetch": "^2.6.7",
+    "nodemon": "^2.0.19",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.0"
+  }
+}

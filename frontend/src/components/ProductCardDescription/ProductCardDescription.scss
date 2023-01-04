@@ -1,0 +1,123 @@
+.context {
+  width: 100%;
+  height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: row;
+
+  > .img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex: 1;
+    padding: 5rem 1rem;
+
+    > .card-img {
+      object-fit: contain;
+      width: 70%;
+    }
+  }
+  > .infos {
+    position: relative;
+    width: 50%;
+    flex: 1;
+    height: 100%;
+    margin-right: 4rem;
+
+    > .card {
+      text-align: center;
+      background: #ffffff;
+      margin: 5rem 0rem 5rem 2rem;
+      border: 1px;
+
+      > .card-body > .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      > .card-body > .card-title2 > .costs {
+        font-size: small;
+        color: gray;
+      }
+      > .card-body > .card-title2 > .rating {
+        display: flex;
+        align-items: center;
+
+        margin: 0 auto;
+        width: 11rem;
+        gap: 1rem;
+      }
+
+      > .card-body > .buttons > #link-go-to-card,
+      #link-add-to-card {
+        position: relative;
+        background: var(--background);
+        color: black;
+        border: solid 1px black;
+        border-radius: 10px;
+        width: 12rem;
+        height: 3rem;
+        font-size: large;
+        padding: 0 1rem;
+        text-align: center;
+        margin: 2.5rem 2rem 1rem 2rem;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        justify-content: center;
+      }
+      > .card-body > .buttons > #link-go-to-card:hover,
+      #link-add-to-card:hover {
+        background-color: var(--accent);
+      }
+    }
+  }
+}
+.error {
+  color: red;
+  margin-top: 1rem;
+  left: 35%;
+  font-size: large;
+}
+@media screen and (max-width: 800px) {
+  .context {
+    flex-direction: column;
+    gap: 0rem;
+
+    > .img {
+      padding: 1rem 1.8rem;
+
+      > .card-img {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+    > .infos {
+      width: 100%;
+      > .card {
+        margin: 0rem 0rem;
+
+        > .card-body > .card-title2 > .rating {
+          gap: 1rem;
+        }
+
+        > .card-body > .buttons > #link-go-to-card,
+        #link-add-to-card {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          width: 12rem;
+          height: 3rem;
+          padding-left: 1rem;
+          margin: 4rem 1rem 1rem 1rem;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+  .error {
+    margin-top: 0rem;
+  }
+}

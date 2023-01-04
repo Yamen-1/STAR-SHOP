@@ -1,0 +1,97 @@
+.thanks {
+  display: flex;
+  justify-content: center;
+  height: 3.4rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+
+  span {
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding: 0 1rem;
+    color: var(--accent);
+  }
+  > .spanT {
+    opacity: 0;
+    animation: fadein 1s linear 1s forwards;
+  }
+  > .spanY {
+    opacity: 0;
+    animation: fadein 1s linear 1.4s forwards;
+  }
+  > .spanF {
+    opacity: 0;
+    animation: fadein 1s linear 1.8s forwards;
+  }
+  > .spanY2 {
+    opacity: 0;
+    animation: fadein 1s linear 2.2s forwards;
+  }
+  > .spanO {
+    opacity: 0;
+    animation: fadein 1s linear 2.6s forwards;
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+h2 {
+  text-align: center;
+}
+.parrProducte {
+  width: 100%;
+  height: 71vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 0 1rem;
+
+  > .products {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+.zurück {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .thanks {
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+    margin: 0 1rem;
+
+    padding: 2rem;
+
+    span {
+      font-size: x-large;
+    }
+  }
+  .parrProducte {
+    height: 70vh;
+    overflow-y: scroll;
+
+    > .products {
+      flex-direction: column;
+    }
+  }
+
+  .zurück {
+    > .linkCountinueShopping {
+      width: 20rem !important;
+      font-size: large !important;
+      margin: 0 auto;
+    }
+  }
+}

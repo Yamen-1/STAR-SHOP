@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.Layout > header {
+  height: 5rem;
+  background-color: #111111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+
+.Layout > header > .header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  padding-left: 20px;
+}
+
+.Layout > header > .header-left > .logo {
+  font-size: 50px;
+  color: var(--accent);
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  text-shadow: 3px 3px black;
+}
+
+.Layout > header > .header-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.Layout > header > .header-center > .home-button,
+.Layout > header > .header-center .products-button {
+  text-decoration: none;
+  color: var(--text-light);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.Layout > header > .header-center > .home-button:hover,
+.Layout > header > .header-center .products-button:hover {
+  color: var(--accent);
+}
+
+.Layout > header > .header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding-right: 20px;
+}
+
+.Layout > header > .header-right > h3 {
+  margin-top: 0.7rem;
+  color: var(--text-light);
+}
+
+.Layout > header > .header-right > button {
+  width: 7rem;
+  height: 3.3rem !important;
+  background-color: var(--accent);
+  border-radius: 5px;
+  padding-right: 0.5rem;
+}
+
+.Layout > header > .header-right > button > .icon-myCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0.5rem;
+  gap: 1rem;
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--text-dark);
+}
+
+@media only screen and (max-width: 800px) {
+  .Layout > header {
+    height: 11rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 1rem;
+  }
+  .Layout > header > .header-left {
+    padding-left: 0rem;
+  }
+  .Layout > header > .header-left > .logo {
+    width: 20rem;
+  }
+  .Layout > header > .header-center > .home-button,
+  .Layout > header > .header-center .products-button {
+    padding: 1px 2px;
+    font-size: large;
+  }
+  .Layout > header > .header-right {
+    gap: 2rem;
+  }
+  .Layout > header > .header-right > button {
+    width: 7rem;
+    padding-bottom: 2rem !important;
+    padding-top: 0 !important;
+  }
+  .Layout > header > .header-right > button > .icon-myCart {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .Layout > header > .header-left {
+    padding-left: 0px;
+  }
+  .Layout > header > .header-left > .logo {
+    font-size: 40px;
+  }
+  .Layout > header > .header-center > .home-button,
+  .Layout > header > .header-center .products-button {
+    padding: 10px 20px;
+    font-size: large;
+    margin-bottom: 0.5rem;
+  }
+  .Layout > header > .header-right > button {
+    height: 2.8rem;
+  }
+  .Layout > header > .header-right > button > .icon-myCart {
+    width: 4.5rem;
+    height: 3rem;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=index.css.map */

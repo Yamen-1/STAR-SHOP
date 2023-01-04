@@ -1,0 +1,318 @@
+.orderContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+
+  > .productsOrder {
+    height: 100%;
+    flex: 2;
+  }
+  > .towBoxes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    right: 0;
+    padding: 2rem 2rem;
+
+    > .payment {
+      border: 2px solid black;
+      background-color: #ffffff;
+      width: 30rem;
+      height: 25rem;
+      margin-right: 2rem;
+      float: right;
+      margin-top: 0;
+      padding-top: 0.5rem;
+      padding-left: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      > .div {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 1rem;
+
+        > .name {
+          padding-left: 2rem;
+        }
+
+        > .deliveryToArea {
+          padding-left: 2rem;
+        }
+
+        > .deliveryArea {
+          color: rgb(144, 142, 142);
+        }
+
+        > .link-button {
+          margin-left: 18%;
+          margin-top: 2.5rem;
+          width: 17rem;
+          padding: 0.6rem;
+          background-color: var(--background);
+          border: 1px solid black;
+          border-radius: 5px;
+          color: black;
+          text-decoration: none;
+          text-align: center;
+        }
+        > .link-button:hover {
+          background-color: black;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    > .paymentTwo {
+      margin-top: 1rem !important;
+      border: 2px solid black;
+      background-color: #ffffff;
+      width: 30rem;
+      height: 15rem !important;
+
+      > .h2 {
+        padding: 0.5rem 2rem;
+      }
+      > .paragraph {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2rem;
+        font-size: large;
+
+        > p > .span {
+          font-size: x-small;
+        }
+      }
+      > hr {
+        width: 85%;
+        margin-left: 2rem;
+      }
+
+      > .bt-buyNow {
+        align-items: center;
+        margin-left: 25%;
+        padding: 0.7rem 6.3rem;
+        background-color: var(--accent);
+        border: 1px solid black;
+        border-radius: 5px;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+      }
+      > .bt-buyNow:hover {
+        background-color: black !important;
+        color: white;
+        cursor: pointer;
+      }
+
+      > Form {
+        width: 70%;
+        height: auto;
+        margin-left: 2rem;
+      }
+
+      > h3 {
+        margin: 1rem 50%;
+      }
+    }
+  }
+}
+
+.myOrders {
+  margin-left: 9rem;
+  margin-top: 2rem;
+}
+.scrollingOrder {
+  overflow-y: scroll;
+  max-height: 75vh;
+}
+
+.listGroup {
+  display: flex;
+  padding: 1rem;
+
+  > .cartInfo {
+    flex-wrap: wrap;
+    display: flex;
+    border: 1px solid black;
+
+    margin-left: 9rem;
+
+    > .img-Titel {
+      display: flex;
+      padding: 1rem 1rem;
+
+      > img {
+        width: 5rem;
+        height: 5rem;
+      }
+
+      > .titelInfo {
+        padding-left: 1rem;
+
+        > p {
+          white-space: wrap;
+          width: 9rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-weight: bolder;
+          font-size: medium;
+        }
+      }
+    }
+
+    > .priceInfo {
+      width: 18rem;
+      text-align: right;
+      padding: 2.5rem;
+      font-weight: bolder;
+    }
+    > .quantityInfo {
+      width: 20rem;
+      text-align: right;
+      padding: 2.5rem;
+      font-weight: bolder;
+    }
+
+    > p {
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .orderContainer {
+    display: flex;
+    flex-direction: column;
+
+    > .productsOrder {
+      width: 100%;
+    }
+    > .towBoxes {
+      bottom: 0 !important;
+      padding: 0;
+      width: 100% !important;
+
+      > .payment {
+        border: 1px solid black;
+        width: 100%;
+        height: 25rem;
+        margin-right: 2rem;
+        float: right;
+        margin-top: 0;
+        padding-top: 0;
+        padding-left: 1rem;
+
+        > .div {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          padding-top: 1rem;
+
+          > .name {
+            padding-left: 2rem;
+          }
+
+          > .deliveryToArea {
+            padding-left: 2rem;
+          }
+
+          > .deliveryArea {
+            color: gray;
+            margin-bottom: 0;
+          }
+
+          > .link-button {
+            margin-left: 26%;
+            width: 10rem;
+          }
+        }
+      }
+
+      > .paymentTwo {
+        margin-top: 1rem !important;
+        border: 1px solid black;
+
+        width: 100%;
+        height: 13rem !important;
+
+        > .h1 {
+          padding: 0.5rem 2rem;
+        }
+        > .paragraph {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 2rem;
+          font-size: large;
+
+          > p > .span {
+            font-size: x-small;
+          }
+        }
+        > hr {
+          width: 85%;
+          margin-left: 2rem;
+        }
+
+        > .bt-buyNow {
+          margin-left: 27%;
+          padding: 0.7rem 3.3rem;
+        }
+        > .bt-buyNow:hover {
+          background-color: black !important;
+          color: white;
+          cursor: pointer;
+        }
+
+        > Form {
+          width: 70%;
+          height: auto;
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+
+  .myOrders {
+    margin-left: 8rem;
+  }
+
+  .listGroup {
+    padding: 1rem;
+
+    > .cartInfo {
+      width: 100%;
+      margin-left: 0.5rem;
+
+      > .img-Titel {
+        > img {
+          width: 3rem;
+          height: 3rem;
+        }
+
+        > .titelInfo {
+          padding-left: 1rem;
+
+          > p {
+            width: 4.5rem;
+          }
+        }
+      }
+
+      > .priceInfo {
+        width: 5rem;
+        padding: 2rem 0.5rem;
+      }
+      > .quantityInfo {
+        width: 6rem;
+        text-align: center;
+        padding: 2rem 0.5rem;
+      }
+    }
+  }
+}

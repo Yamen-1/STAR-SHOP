@@ -1,0 +1,223 @@
+.overview {
+  height: calc(86vh - 5rem);
+  display: flex;
+  padding: 1rem 0;
+
+  > .imgBlock {
+    position: relative;
+    height: 100%;
+    flex: 1;
+
+    > .button {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      width: 20rem !important;
+      height: 3rem;
+      text-decoration: none;
+      color: black;
+      background: var(--background);
+      padding: 10px 16px;
+      border-radius: 5px;
+      font-size: medium;
+      transform: translateX(-50%);
+      opacity: 0.6;
+      font-family: "Cutive Mono", monospace;
+      font-weight: bold;
+      transition: 0.5s ease;
+    }
+    > .button:hover {
+      opacity: 1;
+    }
+  }
+  > .img1 {
+    background-image: url(../../images/Best_Male_Model_Poses_for_Men_-_Male_Standing_Poses_-_Sunny_16_1024x1024.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+  }
+  > .img1:hover {
+    background-image: url(../../images/istockphoto-531253518-612x612.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  > .doppelBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    > .imgBlock {
+      flex: 1;
+      width: 100%;
+    }
+    > .img2 {
+      background-image: url(../../images/laptop-1280536_960_720.webp);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      transition: 0.5s ease-in-out;
+
+      > .button2 {
+        position: absolute;
+        top: 19rem;
+        left: 50%;
+        width: 20rem;
+        height: 3rem;
+        text-decoration: none;
+        color: black;
+        background: var(--background);
+        padding: 10px 35px;
+        border-radius: 5px;
+        font-size: medium;
+        transform: translateX(-50%);
+        opacity: 0.6;
+        font-family: "Cutive Mono", monospace;
+        font-weight: bold;
+        transition: 0.5s ease;
+      }
+      > .button2:hover {
+        opacity: 1;
+      }
+    }
+    > .img2:hover {
+      background-image: url(../../images/hero-image.webp);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    > .img3 {
+      background-image: url(../../images/photo-1606760227091-3dd870d97f1d.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      transition: 0.5s ease-in-out;
+
+      > .button3 {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        width: 20.2rem;
+        height: 3rem;
+        text-decoration: none;
+        color: black;
+        background: var(--background);
+        padding: 10px 50px;
+        border-radius: 5px;
+        font-size: medium;
+        transform: translateX(-50%);
+        opacity: 0.6;
+        font-family: "Cutive Mono", monospace;
+        font-weight: bold;
+        transition: 0.5s ease;
+      }
+      > .button3:hover {
+        opacity: 1;
+      }
+    }
+    > .img3:hover {
+      background-image: url(../../images/jewelry-618429_960_720.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  > .img4 {
+    background-image: url(../../images/d3bb70c98cecbcd6c1c6e95624b6de9d.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+  }
+  > .img4:hover {
+    background-image: url(../../images/agg99615_mustard_xl.jpeg);
+    background-repeat: no-repeat;
+
+    background-size: contain;
+  }
+  @media screen and (max-width: 800px) {
+    > .img1 {
+      background-size: cover;
+    }
+    > .img1:hover {
+      background-size: cover;
+    }
+
+    > .img4 {
+      background-size: cover;
+    }
+    > .img4:hover {
+      background-size: cover;
+    }
+
+    .doppelBlock {
+      display: none;
+    }
+    > .imgBlock {
+      > .button {
+        position: absolute;
+        width: 10rem !important;
+        height: 3rem;
+        font-size: x-small;
+        opacity: 0.6;
+      }
+    }
+  }
+}
+.footer {
+  position: relative;
+  background-color: #111111;
+  color: #888888;
+  width: 100%;
+  height: 100%;
+  font-size: small;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 20px;
+  font-family: "Roboto", sans-serif;
+
+  > .footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  > .footer-contact {
+    font-size: medium;
+
+    > .footer-icons {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      font-size: x-large;
+
+      > .footer-icons-instagram {
+        color: red;
+      }
+      > .footer-icons-twitter {
+        color: rgb(101, 158, 250);
+      }
+      > .footer-icons-facebook {
+        color: blue;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer {
+    position: relative;
+    height: 100%;
+    font-size: x-small;
+    flex-direction: column;
+    padding: 1rem 20px;
+  }
+}

@@ -1,0 +1,111 @@
+.backgroundImg {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.backgroundImg::before {
+  background: url(../../images/apparel-g72210917f_1920.jpg) center center no-repeat;
+  left: -10px;
+  right: -10px;
+  top: -10px;
+  bottom: -10px;
+  background-size: cover;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  opacity: 0.9;
+  display: block;
+  content: " ";
+  position: absolute;
+}
+
+.Login {
+  padding-top: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Login > .box {
+  border: 1px solid;
+  width: 30rem;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: var(--background);
+}
+
+.Login > .box > .h1-login {
+  font-size: 20px;
+  margin: 0;
+}
+
+.Login > .box > .input-group-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.Login > .box > .input-group-login > .label {
+  display: block;
+  width: 10rem;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.Login > .box > .input-group-login > input {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-radius: 30px;
+  border: 2px solid #cccccc;
+  background-color: #ffffff;
+  padding: 12px 20px 12px 20px;
+  font-size: 16px;
+}
+
+.Login > .box > .toggle-register {
+  text-align: right;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+.Login > .box > button {
+  margin-top: 2rem;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: var(--accent);
+  color: black;
+  font-family: "Roboto", sans-serif;
+  border-radius: 3px;
+}
+
+.Login > .box > .error {
+  color: red;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .Login {
+    margin: 2rem 0;
+    height: 28rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */
