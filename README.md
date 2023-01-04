@@ -102,7 +102,3 @@ Response:
 ```javascript
 true;
 ```
-# STAR-SHOP
-# STAR-SHOP
-# STAR-SHOP
-# STAR-SHOP
