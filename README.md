@@ -1,7 +1,7 @@
 # STARSHOP-project
 
 - .env datei muss im backend-folder erstellt werden
-- bitte folgendesscript in backend folder ausführung :
+- bitte folgendes script in backend folder ausführung :
   `node scripts/loadproducts.js`
 - npm i im backend folder. danach den server mit npm start starten
 - npm i im frontend-folder. danach frontend mit npm start starten
