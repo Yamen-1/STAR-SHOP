@@ -1,6 +1,12 @@
 # STARSHOP-project
 
-### neue
+- .env datei muss im backend-folder erstellt werden
+- bitte folgendes seed script in backend folder ausführung :
+  `node scripts/loadproducts.js`
+- npm i im backend folder. danach den server mit npm start starten
+- npm i im frontend-folder. danach frontend mit npm start starten
+- Es ist wichtig das das Frontend auf Port 3000 läuft
+- Es muss MongoDB auf dem System installiert sein
 
 ## Features
 
@@ -22,18 +28,6 @@
 
 - [React js]
 - [Javascript]
-
-### /_ First, Install the needed packages _/
-
-`npm install`
-
-### Nach der installation bitte folgendes seed script ausführung :
-
-`node scripts/loadproducts.js`
-
-### /_ Then start the React app _/
-
-`npm start`
 
 ## Endpunkte
 
